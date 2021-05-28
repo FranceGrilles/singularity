@@ -34,7 +34,7 @@ $ singularity exec irods.sif ils
 Pour que les commandes iRODS fonctionnent, il est nécessaire que le
 fichier `~/.irods/irods_environment.json` existe et soit
 correctement renseigné. Un exemple de ce fichier est donné dans la
-[https://github.com/FranceGrilles/user-docs/releases/download/1.0/fg-irods-user-guide.pdf](documentation du service FG-iRODS).
+[https://github.com/FranceGrilles/user-docs/releases/download/1.2/guide-utilisation-fg-irods.pdf](documentation du service FG-iRODS).
 
 Il est également possible de *sourcer* le fichier `irods.sh` disponible dans
 le répertoire `singularity-images/irods`. Cela permet de créer les
