@@ -1,4 +1,8 @@
-# Image Singularity de France Grilles
+# Image Singularity / Apptainer de France Grilles
+
+## Singularity / Apptainer
+
+Apptainer / Singularity est un logiciel de gestion de conteneurs applicatifs conçu pour faciliter la portabilité des applications. Il est notamment utilisé dans les environnements de calcul de haute performance. Apptainer est le nouveau nom du logiciel libre Singularity. L'installation de l'outil est détaillé sur la documentation utilisateur: https://apptainer.org/docs/user/latest/.
 
 ## Images disponibles
 
@@ -11,7 +15,7 @@ Les images suivantes sont disponibles :
 
 Pour récupérer l'image, vous pouvez utiliser la commande suivante :
 ```
-singularity pull --name irods.sif https://grand-est.fr/resources/CLOUD/irods.sif
+apptainer pull --name irods.sif https://grand-est.fr/resources/CLOUD/irods.sif
 ```
 
 L'image peut également être construite à partir du fichier source
@@ -19,14 +23,14 @@ disponible dans ce dépôt GitHub :
 ```
 $ git clone https://github.com/FranceGrilles/singularity-images
 $ cd singularity-images/irods
-$ singulary build irods.sif irods-client-ubuntu-18.def
+$ apptainer build irods.sif irods-client-ubuntu-18.def
 ```
 
 ### Fonctionnement
 
 Les commandes CLI iRODS peuvent être utilisées avec :
 ```
-$ singularity exec irods.sif ils
+$ apptainer exec irods.sif ils
 /FranceGrillesZone/home/<username>:
   foo.bin
 ```
